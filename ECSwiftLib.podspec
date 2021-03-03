@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ECSwiftLib'
-  s.version          = '0.1.0'
-  s.summary          = 'Useful macro and extension for daily swift develop.'
+  s.version          = '1.0.0'
+  s.summary          = 'Useful macros and extensions for daily swift develop.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,18 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      =  <<-DESC
+  Useful macros and extensions for daily swift develop,may add more later.
+                   DESC
 
   s.homepage         = 'https://github.com/elanchou/ECSwiftLib'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'elanchou' => 'lucidity95@gmail.com' }
+  s.author           = { 'ElanChou' => 'lucidity95@gmail.com' }
   s.source           = { :git => 'https://github.com/elanchou/ECSwiftLib.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.1'
+  s.requires_arc = true
 
   s.source_files = 'ECSwiftLib/Classes/**/*'
   s.frameworks = 'UIKit'
