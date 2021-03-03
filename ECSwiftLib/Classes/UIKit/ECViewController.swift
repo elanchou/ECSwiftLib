@@ -102,17 +102,17 @@ public extension UIViewController {
     ///   - child: the view controller to add as a child.
     ///   - containerView: the containerView for the child viewController's root view.
     func addChildViewController(_ child: UIViewController, toContainerView containerView: UIView) {
-        addChildViewController(child)
+        addChild(child)
         containerView.addSubview(child.view)
-        child.didMove(toParentViewController: self)
+        child.didMove(toParent: self)
     }
 
     /// ECSwiftLib: Helper method to remove a UIViewController from its parent.
     func removeViewAndControllerFromParentViewController() {
         guard parent != nil else { return }
 
-        willMove(toParentViewController: nil)
-        removeFromParentViewController()
+        willMove(toParent: nil)
+        removeFromParent()
         view.removeFromSuperview()
     }
 
